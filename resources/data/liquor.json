@@ -1,0 +1,70 @@
+
+{ 
+     
+     "cazadores":[  
+         {  
+            "invoiceId":1548,
+            "checkinDate":1515189600000,
+            "size":"750",
+            "price":"23.99"
+         },
+         {  
+            "invoiceId":1549,
+            "checkinDate":1515794400000,
+            "size":"375",
+            "price":"16.99"
+         },
+         {  
+            "invoiceId":1550,
+            "checkinDate":1516399200000,
+            "size":"375",
+            "price":"15.99"
+         },
+         {  
+            "invoiceId":1551,
+            "checkinDate":1517004000000,
+            "size":"200",
+			"price":"9.99"
+         },
+         {  
+            "invoiceId":1552,
+            "checkinDate":1517608800000,
+            "size":"50",
+            "price":"2.99"
+         }
+      ],
+    
+     "ciroc":[  
+         {  
+            "invoiceId":61548,
+            "checkinDate":1515189600000,
+            "size":"750",
+            "price":"23.99"
+         },
+         {  
+            "invoiceId":61549,
+            "checkinDate":1515794400000,
+            "size":"375",
+            "price":"16.99"
+         },
+         {  
+            "invoiceId":61550,
+            "checkinDate":1516399200000,
+            "size":"375",
+            "price":"15.99"
+         },
+         {  
+            "invoiceId":61551,
+            "checkinDate":1517004000000,
+            "size":"200",
+			"price":"9.99"
+         },
+         {  
+            "invoiceId":61552,
+            "checkinDate":1517608800000,
+            "size":"50",
+            "price":"2.99"
+         }
+      ]
+ 
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <title>sdfdlsjm</title>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <path d="m452.980316,148.432785c137.854401,-88.048824 -161.526367,-221.198807 -152.26178,-62.403252c16.02597,274.685402 -94.040176,104.278374 162.475891,226.54023c148.291901,70.679504 118.618988,-245.000015 -19.882385,-157.893463c-239.58046,150.677368 -141.013611,-26.108444 -122.958832,248.460754c10.437469,158.728363 280.145386,-23.801178 132.379364,-95.490204c-255.60643,-124.008011 -46.973419,-130.38681 -285.434723,21.920563c-137.854412,88.048828 161.526398,221.198761 152.26178,62.403259c-16.026001,-274.685425 94.040161,-104.278381 -162.475906,-226.540237c-148.291875,-70.679527 -118.618984,244.999985 19.882401,157.893448c239.580475,-150.677368 141.013611,26.108459 122.958832,-248.460754c-10.437469,-158.728348 -280.145388,23.801178 -132.379395,95.490189c255.606445,124.008041 46.973419,130.386826 285.434753,-21.920532z" id="path1317" fill="#aaffff" fill-rule="evenodd" stroke="#aa5500" stroke-width="2.436926" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0"/>
+   <path d="m370.473297,238.999298a60.33493,57.969009 0 1 1 -120.669876,0a60.33493,57.969009 0 1 1 120.669876,0z" id="path2119" fill="#aaffff" fill-rule="evenodd" stroke="#aa5500" stroke-width="0.79346" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0" stroke-opacity="0.431373"/>
+   <path d="m250.635254,248.590424a60.33493,57.969009 0 0 1 85.622345,-61.84671l-26.119324,52.255829l-59.503021,9.590881z" id="path2161" fill="#aaffff" fill-rule="evenodd" stroke-width="0.79346" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dashoffset="0"/>
+  </g>
+  <ellipse ry="55.499999" rx="58.500002" id="svg_2" cy="237.499999" cx="309.499997" stroke-linecap="round" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#ffff00" fill="#ffff00"/>
+  <ellipse id="svg_4" cy="256" cx="316" stroke-linecap="round" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+ </g>
+</svg>

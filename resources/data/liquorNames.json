@@ -1,0 +1,38 @@
+{
+    "sizes":["50ml", "100ml", "200ml", "375ml", "750ml","1 Liter", "1.75 Liter"],
+    "salesman":["Roxana", "Jesse", "Bob Allen", "Ralph"],
+"liquorName":[
+    "Absolute Vodka","Absolute Citron","Ancient age","Avion Silver","Avion Gold",
+    "Azul Reposado","Azul Anejo","Azul Blanco",
+    
+    "Bacardi Superior","Bacardi Gold","Banana Bacardi","Buffalo Trace","Buchanan 12","Buchanan 18","Buchanan Master","B & J",
+    
+    "Cazadores Repasado", "Cazadores Anejo", "Cazadores Blanco", "Ciroc", "Centenrio Reposado", "Chivas Regal", "Chambord","Casamigo's Anejo", "Casamigo's Blanco", "Casamigo’s Repasado", "Courvoisier","Captain Morgan","Captain Morgan (Pvt. Stock)","Christian Brothers",
+    
+    "Dekuper 100proof","Dekuper 80proof","Disaronno","Don Julio Reposado","Don Julio Anejo","Don Julio Blanco","Deleon Repasado","Deleon Blanco","Deleon Anejo",
+    
+    "Evan Williams",
+    
+    "Grey Goose","Gilbey’s","Glenfiddich",
+    
+    "Hennessy","Hennessy VO","Hennessy VSOP","Hornitos Plata","Hornitos Reposado",
+    
+    "Jim Beam","Jim Beam Black","Jim Beam Apple", "Jim Beam Honey","Jameson","Jose Cuervo Gold","Jose Cuervo Silver",
+    
+    "Kessler",
+    
+    "Malibu","MD 20/20","Makers Mark",
+    
+    "Old Monk Rum",
+    
+    "Patron Anejo","Patron silver","Patron Reposado","Paul Masson","Presidente","Popov","Pepermint-schnapps 100pf",
+    
+    "Rose Tequila",
+    
+    "Seagram Vodka smooth","Seagram VO","Stoli","Sauza Gold","Sauza Silver","Sky",
+    "Sailor Jerry",
+    
+    "The Glenlivet founder’s reserve","Tanquery","Taka",
+    "Wild Turkey 101","Wild Turkey 80"
+]
+}

@@ -1,0 +1,33 @@
+@mixin leftNav-imgs($imgPath) {
+    background: url($imgPath) no-repeat;
+    background-size: $max-space $max-space;
+    margin: auto;
+    cursor:pointer;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin padding($pad) {
+  -webkit-padding: $pad;
+     -moz-padding: $pad;
+      -ms-padding: $pad;
+          padding: $pad;
+}
+@mixin sameMargin($margin) {
+    margin: $margin;
+}
+@mixin allMargin($m1, $m2, $m3, $m4) {
+    margin: $m1  $m2 $m3 $m4;
+}
+@mixin twoMargin($m1, $m2) {
+    margin: $m1  $m2  $m1  $m2;
+}
+@mixin applyWidth($width) {
+    width: $width;
+}
+@mixin applyHeight($height) {
+    height: $height;
+}

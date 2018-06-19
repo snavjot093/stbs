@@ -1,0 +1,300 @@
+
+@font-face {font-family: Avenir-Roman;
+    src: url(./fonts/avenir-roman.eot?#iefix) format('embedded-opentype'),
+    url(http://:/) format("No-IE-404"),url(./fonts/avenir-roman.woff) format("woff");
+}
+@font-face {font-family:Avenir-Light;
+    src: url(./fonts/avenir-light.eot?#iefix) format('embedded-opentype'),
+    url(http://:/) format("No-IE-404"),url(./fonts/avenir-light.woff) format("woff");
+}
+body{
+    font-family: Avenir-Roman;
+    color:#444;
+}
+#img-spinner{width:7vw;height:7vw;}
+/*============================PAGES BACKGROUNDS================================*/
+.payslip-container{
+    font-family: avenir-medium;
+    background: url('./images/woodBg.jpg');
+    padding: 30px;
+    
+  }
+.payroll-container1{
+    background: url('./images/liquor/jameson.jpg') no-repeat;
+    padding: 30px;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%; 
+}
+.createOrder-container1{
+    background: url('./images/main/multi-liquor.png') no-repeat;
+    padding: 30px;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%; 
+}
+/*============================RIGHT VIEW=================================*/
+.rightView{
+    margin-top: 60px;
+    background-size: auto 100%;
+    padding: 0;
+    width: 100%;
+    font-weight: bold;
+    color: #444;
+}/*
+.icon-title-hide{
+    margin-left:10px;
+    float: right;
+    width: calc(100% - 64px);
+    line-height: 1;
+}
+.icon-title-show{
+    margin-left:10px;
+    float: right;
+    width: calc(100% - 200px);
+}*/
+
+/*===========================PAYSLIPS=====================*/
+
+.payslip-container  tr:first-child td{
+      border: none;
+  }
+.payslip-container td{
+    border: 2px solid #666;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+
+/*==========================CREATE ORDER PAGE============================+*/
+table.w3-table th,
+table.w3-table td{
+    border-bottom-width: 1px;
+    
+}
+.price-label{
+    font-size: 11px;
+    font-weight: 600;
+}
+.w3-table td{
+    text-align: left;
+    padding-left: 10px;
+}
+/*.checkbox-right{
+        margin-right: 8px;
+}
+.checkbox{
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}*/
+.createOrder-bg{
+    background: url('../images/Grey.jpg');
+    width: 100%;
+    height: 100vh;
+}
+.checkbox input[type="checkbox"] {
+   transform: scale(1.25);
+}
+.caps{
+    text-transform: capitalize;
+}
+/*=================SEARCH LIQUOR ============================*/
+.w3-table th{
+    border: 1px solid #FFF;
+    color:#FFF;
+}
+.w3-table td{
+    border: 1px solid gray;
+    color:#444;
+}
+
+
+
+
+
+
+.bottle-main{
+    background: url(../css/images/lic-logo.png) no-repeat;
+    background-size: 100%;
+    width: 317px;
+    height: 84px;
+    margin: -32px 0 0 -32px;
+}
+.logo-main{
+    background: url(./images/main/lic-her2.jpg) no-repeat;
+    background-size: 27%;
+    padding: 32px 10px 32px 140px !important;
+    background-color: #333;
+    color:#FFF;
+}
+.stbs-title{
+    margin: 0 0 100px;
+}
+.liquor-icons{
+    width: 24% !important;
+    background: aliceblue;
+    height: 204px;
+    margin-right: 3px;
+    padding-top: 10px !important;
+}
+
+
+
+/*==================================FOOTER============================*/
+.kp-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #e8f0f0;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+
+.kp-footer ul {
+    width: 95%;
+    margin: 0 auto !important;
+    padding-top: 0.5em !important;
+}
+
+.kp-footer ul li {
+   /* width:50%;*/
+    list-style-type: none;
+}
+
+.kp-footer ul li.copyright {
+    text-align: right;
+    font-size: 1em;
+    color: #b0b0b0;
+    float:right;
+    padding-top: 0.5em;
+}
+
+li.footer-icon a{
+    float:left;
+    width: 57px;
+    height: 50px;
+    background: url(../css/images/flower-noBg.svg) no-repeat center;
+    background-size: 100%;
+}
+/*================================ADD To List====================================*/
+/*.formField-div, select.formField-div, input.formField-div {
+    font-size: 16px;
+    outline: none;
+    zoom: 1;
+    top: -2px;
+    left: 0;
+    display: block;
+    background: #F0F4F7;
+    z-index: 1;
+    box-shadow: none;
+    transition: none;
+    text-indent: 10px;
+    width: 100%;
+    border-radius: 4px;
+    height: 43px;
+    margin-bottom: 14px;
+}
+ input.datePicker.formField-div{
+     width: 89%;
+     background: #F0F4F7;
+}
+
+.yellow-bg{
+    min-height: 310px;
+    padding: 1.875rem;
+    position: relative;
+    background: #fbd334;
+    color: #444;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 20px auto;
+}
+.yellow-bg:after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: #f7af0b white;
+    border-width: 5rem 5rem 0 0 ;
+    bottom:0;
+    right:0;
+}
+.yellow-headerSpan{
+    width: 150px;
+    display: inline-block;
+    color: #888;
+}
+.formField-div .eLabel{
+    left:15px;
+}
+.col-md-6.formField-div {
+    height: 50px;
+    width: 48%;
+    margin-right: 2%;
+    padding-left:0;
+}
+.col-md-4.formField-div {
+    height: 50px;
+    width: 32%;
+    margin-right: 1.3333%;
+    padding-left:0;
+}
+.dropdown-title{
+    margin-bottom:5px;
+    color: #999;
+}
+.cancel-btn {
+    float: right;
+    border-radius: 18px;
+    color: #0D8EFD;
+    font-size: 12px;
+    font-weight: bold;
+    background: #FFF;
+    text-decoration: none;
+    border: 1px solid #0D8EFD;
+    padding: 10px 50px;
+}
+
+.addBtn1 {
+    float: right;
+    border-radius: 18px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    background: #0D8EFD;
+    text-decoration: none;
+    border: 1px solid #0D8EFD;
+    padding: 10px 50px;
+    margin-left: 50px;
+}
+.floating-placeholder-float label {
+  -moz-transform: scale(0.55, 0.55) rotateY(0);
+  -ms-transform: scale(0.55, 0.55) rotateY(0);
+  -webkit-transform: scale(0.55, 0.55) rotateY(0);
+  transform: scale(0.55, 0.55) rotateY(0);
+  top: 0px;
+  left:3px;
+  font-size: 22px;
+  color:#0088cc;
+}
+.bottom-20{
+    margin-bottom: 20px;
+}*/
+/*=================================+RUMS=======================================*/
+.w3-card-4.w3-center img{
+   /* width: 120px;*/
+    height: 160px;
+}
+ /*==================================MEDIA QUERIES FOR BREAKPOINT=====================*/
+@media only screen and (max-width: 768px) {
+    .col-md-6.formField-div,.col-md-4.formField-div, .formField-div {
+        width: 100%;
+    }
+}
+input.datePicker.formField-div {
+    width: 93%;
+}

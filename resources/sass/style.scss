@@ -1,0 +1,274 @@
+@import "mixins";
+@import "colors";
+@import "typography";
+@import "spacing";
+@import "buttons";
+@import "form";
+
+@import "responsive";
+
+
+
+
+
+
+//======================HOME PAGE============================
+body{
+    background: $body;
+    color: $black-2;
+    font-family: $font-choice;
+    padding: 0px;
+    margin: 0px;
+    width: $max-space;
+    height: $max-space;
+    font-size:$tiny-font;
+}
+.common-modal{
+    text-align:center;
+     color:$pr-theme-color;
+}
+.menu-table{
+    margin: 0 auto;
+    tr{
+        min-height: 57px;
+        height: auto;
+
+        td {
+            text-align: center;
+            padding-top: 2vh;
+            font-size: $xsml-font;
+            color: $black-8;
+        }
+    }
+}
+.kp-footer {
+    position: fixed;
+    bottom: 0;
+    width: $max-space;
+    height: $space-50;
+    background: $footer-bg;
+    overflow: hidden;
+    z-index: 9999;
+    ul {
+        width: 95%;
+        margin: 0 auto !important;
+        padding-top: 0.5em !important;
+
+        li {
+            list-style-type: none;
+        }
+        li.copyright {
+            text-align: right;
+            font-size: 1em;
+            color: $black-6;
+            float:right;
+            padding-top: 0.5em;
+        }
+        li.kp-main {
+            a{
+                float:left;
+                width: $space-200;
+                height: $space-30;
+                background: url(../images/home/kaiser-logo.png) no-repeat center;
+                background-size: 100%;
+            }
+        }
+    }
+}
+/*====================================PATIENT PAGE==============================*/
+
+
+.bottom-line {
+    border-bottom: 1px solid $line;
+}
+.right-line {
+    border-right: 1px solid $line;
+}
+.hline {
+    border: 0;
+    border-top: 1px solid $line;
+    width: 98%;
+    margin-right: 2%;
+    float: left;
+}
+.panel-info{
+    border-color: $panel-border;
+    .panel-heading {
+        border-color: $panel-border;
+        background-image: -webkit-linear-gradient(top,$heading-bg1 0, $heading-bg2 100%);
+        background-image: linear-gradient(to bottom,$heading-bg1 0, $heading-bg2 100%);
+        background-repeat: repeat-x;
+        a{
+            color:$black-3;
+        }
+    }
+}
+table.patientsTableHead {
+    border:1px solid $table-border;
+    thead.panel-heading,tbody{
+        tr{
+            th{
+                vertical-align: middle;
+                font-size: $sm-font;
+                border-bottom: none;
+                font-weight: $bold-5;
+                height: $space-50;
+                text-align: center;
+            }
+            td{
+                text-align: center;
+                vertical-align: middle;
+                font-weight: $bold-5;
+                border-right: 1px solid $table-border;
+                border-top: 1px solid $table-border;
+                height: $space-40;
+                label{
+                    margin-bottom: 0px;
+                    font-size: $tiny-font;
+                    input.admin-type {
+                        margin-left: 5px;
+                        height: 11px;
+                        width: auto;
+                        float: left;
+                        margin-top: 5px;
+                    }
+                }
+
+            }
+            th:first-child,td:first-child{
+                text-align: left;
+            }
+        }
+    }
+}
+.date-dropdown {
+    position: absolute;
+    background: $white;
+    border: 1px solid $black-7;
+    padding: $space-10 $space-15;
+    border-radius: $space-7;
+    z-index: 9;
+    margin: 5px 0px 0px 10px;
+    box-shadow: 12px 15px 33px $black-7;
+}
+.date-btns {
+    cursor: pointer;
+    color: $pr-theme-color;
+    background: $white;
+    border-radius: $space-60;
+    width: $space-30;
+    line-height: $space-30;
+    text-align: center;
+    font-size: $xsml-font;
+}
+.btnActive {
+    background: $pr-theme-color;
+    color: $white;
+}
+.caret2 {
+     border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid $pr-theme-color !important;
+    vertical-align: baseline;
+}
+/*====================ENROLLMENT PAGE========================*/
+.title {
+    color: $black-1;
+    font-size: $small-font;
+    font-weight: normal;
+    padding-bottom: $space-25;
+    padding-top: $space-15;
+}
+.sub-title{
+    @extend .title;
+    font-size: $font-14;
+    padding: 0;
+    margin:15px 0 10px 15px;
+    text-decoration: underline;
+}
+.title-number {
+    font-size: $medium-font;
+    font-weight: normal;
+    color: $pr-theme-color;
+    padding-right: 1%;
+}
+.dashSpan {
+    margin-right: 15px;
+    margin-left: -7px;
+    font-size: 40px;
+    color: $black-5;
+}
+.formField-div, select.formField-div, input.formField-div {
+    font-size: 18px;
+    outline: none;
+    zoom: 1;
+    top: -2px;
+    left: 0;
+    display: block;
+    background: $black-10;
+    z-index: 1;
+    box-shadow: none;
+    transition: none;
+    text-indent: 10px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid $input-border;
+}
+ input.datePicker.formField-div{
+     width: 89%;
+     background: #F0F4F7;
+}
+
+
+.formField-div select.stbc {
+    font-size: 18px;
+    outline: none;
+    top: -2px;
+    left: 0;
+    position: absolute;
+    display: block;
+    background: $black-10;
+    z-index: 1;
+    box-shadow: none;
+    transition:none;
+    text-indent: 10px;
+    width:100%;
+    border-radius: 4px;
+    border: 1px solid $input-border;
+}
+
+.formField-div label {
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font-size: 16px;
+  z-index: 2;
+  -moz-transform-origin: 0 0em;
+  -ms-transform-origin: 0 0em;
+  -webkit-transform-origin: 0 0em;
+  transform-origin: 0 0em;
+  -moz-transition: -moz-transform 160ms, color 200ms;
+  -o-transition: -o-transform 160ms, color 200ms;
+  -webkit-transition: -webkit-transform 160ms, color 200ms;
+  transition: transform 160ms, color 200ms;
+  -moz-transform: scale(1, 1) rotateY(0);
+  -ms-transform: scale(1, 1) rotateY(0);
+  -webkit-transform: scale(1, 1) rotateY(0);
+  transform: scale(1, 1) rotateY(0);
+  color: $black-4;
+}
+
+.floating-placeholder-float label {
+  -moz-transform: scale(0.55, 0.55) rotateY(0);
+  -ms-transform: scale(0.55, 0.55) rotateY(0);
+  -webkit-transform: scale(0.55, 0.55) rotateY(0);
+  transform: scale(0.55, 0.55) rotateY(0);
+  top: 0px;
+  left:3px;
+  font-size: 22px;
+  color:$pr-theme-color;
+}
+.formField-div.savebutton input.admin-input {
+    border-bottom: none;
+}

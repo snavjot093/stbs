@@ -1,0 +1,29 @@
+//$outer-gutter-spacing: $small-spacing;
+
+$mobile-max: 414px;
+$tablet-max: 768px;
+$desktop-small-max: 1024px;
+$desktop-medium-max: 1280px;
+
+$tablet-min: $mobile-max+1px;
+$desktop-small-min: $tablet-max+1px;
+$desktop-medium-min: $desktop-small-max+1px;
+$desktop-large-min: $desktop-medium-max+1px;
+
+/*.desktop-only {
+  @include media($device) {
+    display: none !important;
+  }
+}
+
+.device-only {
+  @include media($desktop) {
+    display: none !important;
+  }
+}*/
+@media only screen and (min-width: 0px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .right-line{
+        border-right: none;
+    }
+
+}

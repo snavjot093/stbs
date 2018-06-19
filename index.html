@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html ng-app="job-app" scroll id="page" ng-class="{min:boolChangeClass}">
+<title>Santa Teresa Bottle shop</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./resources/images/hennessyFamily.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./resources/css/bottleShop.css"/>
+<link rel="stylesheet" href="./resources/css/style.css"/>
+<style>
+/*html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}*/
+.w3-sidebar {
+  z-index: 3;
+  width: 200px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/jquery.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular.min.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-route.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-resource.min.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/spin.min.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-spinner.min.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-loading-spinner.js" ></script>
+    <script type="text/javascript" src="./resources/js/libs/ngDialog.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-messages.js" ></script>
+    <script type="text/javascript" src="./resources/js/libs/multiselect.js" ></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-animate.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-ui-switch.js"></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-cookies.min.js" ></script>
+    <script type="text/javascript" src="./resources/js/libs/angular-clipboard.js" ></script>
+    <script type="text/javascript" src="./resources/js/libs/ui-bootstrap-tpls-0.14.2.js" ></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="./resources/js/job-app.js"></script>
+    <script type="text/javascript" src="./resources/js/homePage.js" ></script>
+    <script type="text/javascript" src="./resources/js/payroll.js" ></script>
+     <script type="text/javascript" src="./resources/js/payslip.js" ></script>
+    <script type="text/javascript" src="./resources/js/createOrder.js" ></script>
+    <script type="text/javascript" src="./resources/js/searchLiquor.js" ></script>
+    <script type="text/javascript" src="./resources/js/addToList.js" ></script>
+    <script type="text/javascript" src="./resources/js/whiskey.js" ></script>
+    <script type="text/javascript" src="./resources/js/wine.js" ></script>
+    <script type="text/javascript" src="./resources/js/rum.js" ></script>
+     <script type="text/javascript" src="./resources/js/vodka.js" ></script>
+    <script type="text/javascript" src="./resources/js/tequila.js" ></script>
+    
+    
+    <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'line']});
+    </script>
+</head> 
+
+<body class="" ng-controller="HomeCtrl" ng-init="init()">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="javascript:void(0)" ng-click="home()"class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="javascript:void(0)" ng-click="payroll()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Payroll</a>
+    <a href="javascript:void(0)" ng-click="payslip()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Payslips</a>
+    <a href="javascript:void(0)" ng-click="createOrder()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Create Order</a>
+    <a href="javascript:void(0)" ng-click="searchLiquor()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Search Liquor</a>
+    <a href="javascript:void(0)" ng-click="addToList()" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Add Liquor to DB</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left left-menu" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-green w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="javascript:void(0)" ng-click="vodka()">Vodka</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="javascript:void(0)" ng-click="whiskey()">Whiskey</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="javascript:void(0)" ng-click="wine()">Wine</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="javascript:void(0)" ng-click="rum()">Rum</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="javascript:void(0)" ng-click="tequila()">Tequila</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:200px">
+     <div class="rightView" ng-view style="margin-top: 43px;"></div>
+
+
+  <!--footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer-->
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

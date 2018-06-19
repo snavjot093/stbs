@@ -1,0 +1,34 @@
+$font-choice: avenir;
+
+
+$base-font-size: 16px;
+$em-base: $base-font-size; // used for bourbon
+$base-mobile-font-size: 15px;
+
+$font-7 : 7px;
+$font-8 : 8px;
+$font-9 : 9px;
+$xsml-font: 10px;
+$tiny-font: 12px;
+$sm-font: 14px;
+$font-14:14px;
+$font-15:15px;
+$font-16 : 16px;
+$font-17 : 17px;
+$small-font: 18px;
+$font-25: 25px;
+$medium-font: 20px;
+$large-font: 28px;
+$xl-font: 36px;
+$xxl-font: 60px;
+$font-45: 45px;
+
+$bold-9 : 900;
+$bold-7 : 700;
+$bold-6 : 600;
+$bold-5 : 500;
+$bold-4 : 400;
+$bold-1 : 100;
+.b{
+    font-weight: 900;
+}

@@ -1,0 +1,130 @@
+$extra-tiny-spacing: 10px;
+$tiny-spacing: 15px;
+$small-spacing: 20px;
+$medium-spacing: 30px;
+$large-spacing: 40px;
+$xl-spacing: 60px;
+$xxl-spacing: 90px;
+
+$gutter-spacing: $medium-spacing;
+$paragraph-spacing: $small-spacing;
+
+$max-space : 100%;
+$space-10p: 10%;
+$space-60p: 60%;
+
+
+
+$space-0 : 0px;
+$space-1 : 1px;
+$space-2 : 2px;
+$space-4 : 4px;
+$space-5 : 5px;
+$space-6 : 6px;
+$space-7 : 7px;
+$space-8 : 8px;
+$space-9 : 9px;
+$space-10 : 10px;
+$space-12 : 12px;
+$space-13 : 13px;
+$space-15 : 15px;
+$space-16 : 16px;
+$space-20 : 20px;
+$space-25 : 25px;
+$space-30 : 30px;
+$space-35 : 35px;
+$space-40 : 40px;
+$space-43 : 43px;
+$space-45 : 45px;
+$space-50 : 50px;
+$space-60 : 60px;
+$space-70 : 70px;
+$space-75 : 75px;
+$space-80 : 80px;
+$space-90 : 90px;
+$space-100 : 100px;
+$space-110 : 110px;
+$space-120 : 120px;
+$space-130 : 130px;
+$space-140 : 140px;
+$space-150 : 150px;
+$space-180 : 180px;
+$space-200 : 200px;
+$space-210 : 210px;
+$space-230 : 230px;
+$space-245 : 245px;
+$space-350 : 350px;
+$space-380 : 380px;
+/*======================SPACING CLASSES=============================*/
+/*===========padding============*/
+.pad-5{padding: 5px;}
+.pad-8{padding: 8px;}
+.pad-L8{padding-left: 8px;}
+.pad-R8{padding-right: 8px;}
+.pad-T8{padding-top: 8px;}
+.pad-B8{padding-bottom: 8px;}
+
+.pad-10{padding: 10px;}
+.pad-L10{padding-left: 10px;}
+.pad-R10{padding-right: 10px;}
+.pad-T10{padding-top: 10px;}
+.pad-B10{padding-bottom: 10px;}
+
+.pad-20{padding: 20px;}
+.pad-L20{padding-left: 20px;}
+.pad-R20{padding-right: 20px;}
+.pad-T20{padding-top: 20px;}
+.pad-B20{padding-bottom: 20px;}
+
+//==========================MARGINS===================================
+.margin-5{margin: 5px;}
+.margin-10{margin: 10px;}
+.margin-15{margin: 15px;}
+.margin-20{margin: 20px;}
+.margin-25{margin: 25px;}
+.margin-30{margin: 30px;}
+.margin-40{margin: 40px;}
+
+
+.margin-L5{margin-left: 5px;}
+.margin-R5{margin-right: 5px;}
+.margin-T5{margin-top: 5px;}
+.margin-B5{margin-bottom: 5px;}
+
+.margin-T0{margin-top: 0px;}
+.margin-T2{margin-top: 2px;}
+
+.margin-L10{margin-left: 10px;}
+.margin-R10{margin-right: 10px;}
+.margin-T10{margin-top: 10px;}
+.margin-B10{margin-bottom: 10px;}
+.margin-L15{margin-left: 15px;}
+.margin-R15{margin-right: 15px;}
+.margin-T15{margin-top: 15px;}
+.margin-B15{margin-bottom: 15px;}
+
+.margin-L20{margin-left: 20px;}
+.margin-R20{margin-right: 20px;}
+.margin-T20{margin-top: 20px;}
+.margin-B20{margin-bottom: 20px;}
+
+.margin-L30{margin-left: 30px;}
+.margin-R30{margin-right: 30px;}
+.margin-T30{margin-top: 30px;}
+.margin-B30{margin-bottom: 30px;}
+
+.margin-L40{margin-left: 40px;}
+.margin-R40{margin-right: 40px;}
+.margin-T40{margin-top: 40px;}
+.margin-B40{margin-bottom: 40px;}
+
+.row-fluid.margin-B20 > .col-md-1{
+    display: flex;
+}
+/*==================================*/
+.height-100{
+    height: 100px;
+}
+.height-150{
+    height: 150px;
+}
