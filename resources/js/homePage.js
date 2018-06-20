@@ -19,26 +19,26 @@ app.run(function($rootScope, $templateCache, $http, $cookies,$window,ngDialog) {
             $templateCache.remove(current.templateUrl);
         }
     });
-  /*  $rootScope.$on('IdleTimeout', function() {
-        $window.location.href = 'index.html';
-    });
-    
-    $rootScope.$on('IdleStart', function() {
-        ngDialog.open({
-                template: 'warning-dialog.html',
-                className: 'ngdialog-theme-default',
-                showClose: false,
-                escape: true,
-                closeByEscape: true
-        });
-    });
-    
-    $rootScope.$on('IdleEnd', function() {
-        ngDialog.close();
-    });
-      
-    Idle.watch();  */
-      
+    /*  $rootScope.$on('IdleTimeout', function() {
+          $window.location.href = 'index.html';
+      });
+
+      $rootScope.$on('IdleStart', function() {
+          ngDialog.open({
+                  template: 'warning-dialog.html',
+                  className: 'ngdialog-theme-default',
+                  showClose: false,
+                  escape: true,
+                  closeByEscape: true
+          });
+      });
+
+      $rootScope.$on('IdleEnd', function() {
+          ngDialog.close();
+      });
+
+      Idle.watch();  */
+
 });
 
 //Home Controller
@@ -48,16 +48,16 @@ app.controller('HomeCtrl', ['$scope', '$http', '$window', '$location',  'ngDialo
 //=========== COMMON MODAL DAILOG FOR THROUGH-OUT THE APP ======================
             $scope.confirmationDailog= function(responseMessage,responseStatus, newPath){
                 ngDialog.openConfirm({
-    		        template:'<div class="modal fade" id="myModal" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Modal Header</h4></div><div class="modal-body"><p>Some text in the modal.</p></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>\
+                    template:'<div class="modal fade" id="myModal" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Modal Header</h4></div><div class="modal-body"><p>Some text in the modal.</p></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>\
                                   </div></div></div>',
-    			       /* <div class="modal-body" style="text-align:center; color:#2aabd2;">'+
-    	                '<h4>'+ responseMessage + '</h4>'+
-    	                '</div>'+
-                        ' <br\>\
-                        <div class="ngdialog-buttons">\
-                           <!--button type="button" class="ngdialog-button btn-warning" ng-click=confirm("cancel")>Cancel</button-->\
-                           <button type="button" class="ngdialog-button ngdialog-button-primary" style="margin: 0 20px 20px;" ng-click=confirm("ok")>OK</button>\
-                        </div>',*/
+                    /* <div class="modal-body" style="text-align:center; color:#2aabd2;">'+
+                     '<h4>'+ responseMessage + '</h4>'+
+                     '</div>'+
+                     ' <br\>\
+                     <div class="ngdialog-buttons">\
+                        <!--button type="button" class="ngdialog-button btn-warning" ng-click=confirm("cancel")>Cancel</button-->\
+                        <button type="button" class="ngdialog-button ngdialog-button-primary" style="margin: 0 20px 20px;" ng-click=confirm("ok")>OK</button>\
+                     </div>',*/
                     className: 'ngdialog-theme-default',
                     plain: true,
                     showClose: false,
@@ -78,42 +78,45 @@ app.controller('HomeCtrl', ['$scope', '$http', '$window', '$location',  'ngDialo
             };
 
         }; //=======END OF INIT();
-       //$scope.activeMenu = 'Payroll';
+        //$scope.activeMenu = 'Payroll';
         $scope.home = function() {
-           $location.path('/home');
-		}; 
-       $scope.payroll = function() {
-           $location.path('/payroll');
-		}; 
-       $scope.payslip = function() {
-           $location.path('/payslip');
-		}; 
-            
-       $scope.createOrder=function() {
-           $location.path('/createOrder');
-		}; 
+            $location.path('/home');
+        };
+        $scope.payroll = function() {
+            $location.path('/payroll');
+        };
+        $scope.payslip = function() {
+            $location.path('/payslip');
+        };
+
+        $scope.createOrder=function() {
+            $location.path('/createOrder');
+        };
+        $scope.showList=function() {
+            $location.path('/showList');
+        };
         $scope.searchLiquor=function() {
-           $location.path('/searchLiquor');
-		}; 
+            $location.path('/searchLiquor');
+        };
         $scope.addToList=function() {
-           $location.path('/addToList');
-		}; 
+            $location.path('/addToList');
+        };
         $scope.whiskey = function() {
-           $location.path('/whiskey');
-		};
+            $location.path('/whiskey');
+        };
         $scope.rum = function() {
-           $location.path('/rum');
-		};
+            $location.path('/rum');
+        };
         $scope.wine = function() {
-           $location.path('/wine');
+            $location.path('/wine');
         }
         $scope.vodka = function() {
-           $location.path('/vodka');
+            $location.path('/vodka');
         }
         $scope.tequila = function(){
             $location.path('/tequila');
         }
-     $scope.errorHandler = function (data) {
+        $scope.errorHandler = function (data) {
             ngDialog.openConfirm({ template: '\
                 <p></p><p><font size="3"> ' + data.message + '</font></p>\
                 <p><font size="3"> ' + (data.details !== null ? data.details : '') +'</font></p><p></p>\
@@ -123,45 +126,45 @@ app.controller('HomeCtrl', ['$scope', '$http', '$window', '$location',  'ngDialo
                 className: 'ngdialog-theme-default', plain: true, showClose: false, escape: true
             }).then(function(value) {
                 $window.location.href = 'login.jsp';
-            });   
+            });
         };
         /* $scope.dynamicPopover = {
             templateUrl: 'popoverTemplate1'
         };
         */
-     
-		
-        
-}]);
+
+
+
+    }]);
 //============JUST FOR THE LABELS===================
-    function updateText(event) {
-        $scope.input = $(event.target);
-        setTimeout(function () {
-            $scope.val = $scope.input.val();
-            if ($scope.val !== "") {
-                $scope.input.parent().addClass("floating-placeholder-float");
-            } else {
-                $scope.input.parent().removeClass("floating-placeholder-float");
-            }
-        }, 1);
-    };
-    angular.element(".formField-div input").keydown(updateText);
-    angular.element(".formField-div input").change(updateText);
-   /* $scope.pasted=function(){
-       setTimeout(function(){
-            angular.element(".formField-div").addClass('floating-placeholder-float');
-        },500);
-    };*/
+function updateText(event) {
+    $scope.input = $(event.target);
+    setTimeout(function () {
+        $scope.val = $scope.input.val();
+        if ($scope.val !== "") {
+            $scope.input.parent().addClass("floating-placeholder-float");
+        } else {
+            $scope.input.parent().removeClass("floating-placeholder-float");
+        }
+    }, 1);
+};
+angular.element(".formField-div input").keydown(updateText);
+angular.element(".formField-div input").change(updateText);
+/* $scope.pasted=function(){
+    setTimeout(function(){
+         angular.element(".formField-div").addClass('floating-placeholder-float');
+     },500);
+ };*/
 app.directive("scroll", function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind("scroll", function() {
-             if (this.pageYOffset >= 100) {
-                 scope.boolChangeClass = true;
-                 //console.log('Scrolled below header.');
-             } else {
-                 scope.boolChangeClass = false;
-                 //console.log('Header is in view.');
-             }
+            if (this.pageYOffset >= 100) {
+                scope.boolChangeClass = true;
+                //console.log('Scrolled below header.');
+            } else {
+                scope.boolChangeClass = false;
+                //console.log('Header is in view.');
+            }
             scope.$apply();
         });
     };
